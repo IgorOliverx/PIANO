@@ -17,7 +17,7 @@ body {
     height: 205px;
     margin-top: 40px;
     border-radius: 10px;
-    width: 723px;
+    width: 1fr;
 
 }
 
@@ -69,7 +69,7 @@ body {
 #btn17:hover {
     background-color: #ffffff;
     width: 45px;
-    height: 200px;
+    height: 210px;
 
 }
 
@@ -120,4 +120,21 @@ body {
     position: fixed;
     margin-left: 850px;
     margin-top: 10px;
+}
+
+
+
+
+@media screen and (max-width:998px) {
+    .container {width: 830px; height: 230px;}
+    #piano{ width: 600px; height: 150px; margin-top: 10px;}
+    #btn, #btn1,#btn2, #btn3,#btn4, #btn5,#btn6, #btn7,
+    #btn8, #btn9,#btn12, #btn13,#btn14, #btn15,#btn16, #btn17  
+    {width: 38px; height: 160px;}
+    #btn:hover, #btn1:hover,#btn2:hover, #btn3:hover,#btn4:hover, #btn5:hover,#btn6:hover, #btn7:hover,
+    #btn8:hover, #btn9:hover,#btn12:hover, #btn13:hover,#btn14:hover, #btn15:hover,#btn16:hover, #btn17:hover  
+    {width: 38px; height: 166px;}
+    /* .container-principal {margin-top: 83px; }
+    .icon { width: 166px;   margin-left: 705px;margin-top: 10px;}
+    .tittle { position: relative;margin-right: 730px;} */
 }
