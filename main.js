@@ -1,7 +1,4 @@
-//Com um laço for para um array de botoes ficaria super simples, mas nao consegui executar tao bem e sair o som
-//(const $ of array ){
-// html craseado e substituindo o id/audio com variaveis do array   
-//}
+
 
 const btn = document.getElementById('btn');
 btn.addEventListener('click', function () {
@@ -109,14 +106,6 @@ btn17.addEventListener('click', function() {
 
 
 
-
-// OUTRO JEITO DE FAZER É POR MEIO DE FUNÇÕES - TESTEI ESSE INICIALMENTE COM ITERAÇÃO MAS NAO CONSEGUI O som, AGORA FUNCIONOU - LEMBRE-SE DE COLOCAR A FUNCTION NA CLASSE DO BOTAO COM O ONCLICK :)
-// function som() {
-//     btn.addEventListener('click', function() {
-//         const audio = document.getElementById('audio')
-//         audio.play();
-//     } )
-// }
 
 
 
