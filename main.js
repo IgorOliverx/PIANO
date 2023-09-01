@@ -1,16 +1,18 @@
+//Com um laço for para um array de botoes ficaria super simples, mas nao consegui executar tao bem e sair o som
+//(const $ of array ){
+// html craseado e substituindo o id/audio com variaveis do array   
+//}
+
 const btn = document.getElementById('btn');
 btn.addEventListener('click', function () {
     const audio = document.getElementById('audio');
     audio.play();
-    
-    //tentei fazer com que ondas sonoras aparecerem ao teclar, funcionou, mas nao esta bem executado
-
-
 })
 
 function mostrarOnda () {
     const vid = document.getElementById('vid');
     vid.style.display = "block";
+    //função para fazer ondas sonoras aparecerem - ela funciona, mas nao consigo um video bom :)
 }
 
 const btn1 = document.getElementById('btn1');
