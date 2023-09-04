@@ -1,145 +1,56 @@
 body {
-    background-color: rgb(4, 4, 4);
-}
-
-    
-
-.container-principal {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    
+    background-color: lightblue;
 }
 
 
-#piano {
-    display: flex;
-    background-color: rgb(24, 62, 62);
-    justify-content: center;
-    height: 205px;
-    margin-top: 40px;
-    border-radius: 10px;
-    width: 1fr;
-
-}
-
-#btn,
-#btn2,
-#btn4,
-#btn6,
-#btn8,
-#btn12,
-#btn14,
-#btn16 {
-    background-color: grey;
-    width: 45px;
-    height: 200px;
-    border: black;
-    border-radius: 5px;
-}
-
-#btn1,
-#btn3,
-#btn5,
-#btn7,
-#btn9,
-#btn13,
-#btn15,
-#btn17 {
+.container-main {
     background-color: black;
-    width: 45px;
-    height: 200px;
-    border: black;
-    border-radius: 5px;
-}
-
-#btn:hover,
-#btn2:hover,
-#btn4:hover,
-#btn6:hover,
-#btn1:hover,
-#btn3:hover,
-#btn5:hover,
-#btn7:hover,
-#btn8:hover,
-#btn9:hover,
-#btn14:hover,
-#btn16:hover,
-#btn12:hover,
-#btn13:hover,
-#btn15:hover,
-#btn17:hover {
-    background-color: #ffffff;
-    width: 50px;
-    height: 210px;
-
-}
-
-
-
-#btn:active,
-#btn2:active,
-#btn4:active,
-#btn6:active,
-#btn1:active,
-#btn3:active,
-#btn5:active,
-#btn7:active,
-#btn8:active,
-#btn9:active,
-#btn14:active,
-#btn16:active,
-#btn12:active,
-#btn13:active,
-#btn15:active,
-#btn17:active {
-    transform: translateY(25px);
-}
-
-.container {
-    display: flex;
-    align-items: center;
+    margin-top: 100px;
+    width: 1200px;
     justify-content: center;
-    width: 1000px;
-    height: 300px;
-    background-color: orangered;
-    border-radius: 10px;
-    box-shadow: 5px 5px 7px 6px grey;
+    margin-left: 30px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+
+.container1 {
+    position: absolute; 
+    margin-left: 123px;
+    margin-top: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute ;
 }
 
 .tittle {
-    position: fixed;
-    margin-right: 890px;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
+    margin-top: 1px;
 }
 
-.icon {
-    display: flex;
-    width: 220px;
-    justify-content: space-evenly;
-    position: fixed;
-    margin-left: 850px;
-    margin-top: 10px;
+
+.container #btn17{
+    margin-left: 80px;
 }
+
+
 
 
 
 @media screen and (max-width:998px) {
-    .container {width: 830px; height: 230px;}
-    #piano{ width: 600px; height: 150px; margin-top: 10px;}
+    .container-main {width: 830px; height: 230px;}
     #btn, #btn1,#btn2, #btn3,#btn4, #btn5,#btn6, #btn7,
     #btn8, #btn9,#btn12, #btn13,#btn14, #btn15,#btn16, #btn17  
-    {width: 38px; height: 160px;}
+    {width: 18px; height: 60px;}
     #btn:hover, #btn1:hover,#btn2:hover, #btn3:hover,#btn4:hover, #btn5:hover,#btn6:hover, #btn7:hover,
     #btn8:hover, #btn9:hover,#btn12:hover, #btn13:hover,#btn14:hover, #btn15:hover,#btn16:hover, #btn17:hover  
-    {width: 38px; height: 166px;}
+    {width: 18px; height: 66px;}
     .icon { width: 166px;   margin-left: 655px;margin-top: 10px;}
     .tittle {margin-right: 680px;}
-    /* .container-principal {margin-top: 83px; }
-    
-    */
+  
 }
 
 @media screen and (max-width:768px) {
