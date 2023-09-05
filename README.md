@@ -22,28 +22,16 @@ Repare que o evento 'click' desencadeia a reação que foi criada dentro da func
     Uma constante para alocar o audio do html dentro do js, entao eu pego seu id e manipulo-o e após tê-lo no js, uso uma função simples que é a .play() que no caso, startou o aúdio após acontecer o click.
 ); 
 
-OBS: O código poderia ter ficado visualmente muito mais bonito e bem organizado. O certo seria eu criar um array e gerar automaticamente seus botoes com um id predeterminado. Depois rodaria um for criando uma constante para determinar os id's. Algo parecido com isso:
+OBS:Após alguns testes, consegui manipular de forma que o main.js ficasse curto e eficaz, iterei em um laço que corre os botoes de 0 a 30: desta forma:
 
-const array = [{
-    id:1,
-    audio: "caminho do audio"
-},{
-    id:2,
-    audio: "caminho do audio"
-},
-...]
-"(const variavel of array) = {
-    const outravariavel btn${id} = document.getElementById('btn${id}');
-btn${id}.addEventListener('click', function () {
-    const audio${id} = document.getElementById('audio${}');
-    audio${audio}.play();
-})"
-document.getElementeById(classe ou id onde estariam os botoes, possivelmente 'container-btn').innerHTML += outravariavel;
+for (let i = 0; i <= 30; i++) {
+    const btn = document.getElementById(`btn${i}`);
+    const audio = document.getElementById(`audio${i}`);
+    btn.addEventListener('click', function () {
+        audio.play();
+    });
 }
 
-
-
-O código seria muito mais simples e tão eficaz quanto, mas encontrei problemas ao tentar determinar um audio especifico para um id especifico, o codigo acima é um prototipo de como deveria ser, para se ter melhores técnicas de clean code.
 
  OUTRO JEITO DE FAZER É POR MEIO DE FUNÇÕES - TESTEI ESSE INICIALMENTE COM ITERAÇÃO MAS NAO CONSEGUI O EXECUTAR CADA UM COM UM SOM - LEMBRE-SE DE COLOCAR A FUNCTION NA CLASSE DO BOTAO COM O ONCLICK(no html) 
  function som() {
